@@ -4,11 +4,13 @@ public class CalculadoraModel {
     private double resultado;
     private double operando;
     private String operacao;
+    private double Soperando;
 
     public CalculadoraModel() {
         this.resultado = 0;
         this.operando = 0;
         this.operacao = "";
+        this.soperando = 0;
     }
 
  
@@ -35,6 +37,13 @@ public class CalculadoraModel {
     public void setOperacao(String operacao) {
         this.operacao = operacao;
     }
+   public double getSoperando() {
+		return soperando;
+	}
+
+	public void setSoperando(double soperando) {
+		this.soperando = soperando;
+	}
 
     @Override
     public String toString() {
