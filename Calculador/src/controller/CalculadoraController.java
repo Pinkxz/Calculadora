@@ -30,8 +30,8 @@ public class CalculadoraController implements ActionListener {
             model.setOperacao(comando);
             view.limparDisplay();
         } else if (comando.equals("=")) {
-            double segundoOperando = Double.parseDouble(view.getDisplay());
-            realizarOperacao(model.getOperando(), segundoOperando, model.getOperacao());
+            model.setSoperando(Double.parseDouble(view.getDisplay()));
+            realizarOperacao(model.getOperando(), model.getSoperando(), model.getOperacao());
         }
     }
 
